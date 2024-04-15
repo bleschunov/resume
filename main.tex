@@ -7,6 +7,7 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage[T2A]{fontenc}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -16,7 +17,7 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
+\usepackage[english, russian]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
 
@@ -114,49 +115,104 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Dmitry Bleschunov} \\ \vspace{1pt}
-    \small +90 536 889 73 48 $|$ \href{mailto:bleschunov.dmitry@gmail.com}{\underline{bleschunov.dmitry@gmail.com}} $|$ 
+    \textbf{\Huge \scshape Блещунов Дмитрий} \\ \vspace{1pt}
+    \small \href{mailto:bleschunov.dmitry@gmail.com}{\underline{bleschunov.dmitry@gmail.com}} $|$ 
     \href{https://linkedin.com/in/dmitrybleschunov}{\underline{LinkedIn}} $|$
     \href{https://github.com/bleschunov}{\underline{GitHub}}
 \end{center}
 
-\textbf{I am a passionate Software Developer experienced in Java, Python, JavaScript, AWS and Telegram\&Discord bots.}
+\textbf{Software Engineer с опытом разработки enterprise—приложения для крупнейшего застройщика РФ.}
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Опыт}
   \resumeSubHeadingListStart
 
   \resumeSubheading
-      {Junior Fullstack Developer}{February 2023—Present}
-      {\href{https://vpa.group}{\underline{VPA Group}}}{Remote}
-      {IT Outsource}
-      
+      {Fullstack разработчик}{Май 2023—Сентябрь 2023}
+      {\href{https://t.me/abouthub}{\underline{Hub}}}{Удаленно}
+      {LLM-powered ассистент по базам данных для топ–менеджеров в enterprise.\\Получение ответов на вопросы по данным из БД\\с помощью запросов на естественном языке}
       \resumeItemListStart
-        \resumeItem{Modified REST API written in Fastapi}
-        \resumeItem{Modified web interface written in React}
-      \resumeItemListEnd
-
-  \resumeSubheading
-      {Java Intern}{December 2022—January 2023}
-      {CorporationX}{Remote}
-      {Service for project maintainers to search contributors}
-      
-      \resumeItemListStart
-        \resumeItem{Participated in the development of the REST API using Spring and PostgreSQL}
-        \resumeItem{Developed the general mechanism for error handling in application}
-        \resumeItem{Set up Spring Security for registration and authorization}
-        \resumeItem{Integrated Amazon S3 to store user's avatars in blob storage}
-        \resumeItem{Integrated Amazon SES to send e-mails to users}
+        \resumeItem{ChatGPT. Интеграция в сервис}
+        \resumeItem{Промпт для генерации SQL с использованием уникального языка доменной области компании. Увеличил субъективную точность ответов}
+        \resumeItem{Промпт с использованием паттерна chain of thoughts. Сократил количество срабатываний negative false ответов практическо до 0}
+        \resumeItem{>15 презентаций генеральному заказчику}
+        \resumeItem{Интерфейс чата на React с использованием библиотеки ChakraUI}
+        \resumeItem{Схема базы данных для PostgreSQL}
+        \resumeItem{API приложения на FastAPI}
       \resumeItemListEnd
 
     \resumeSubheading
-      {React Developer}{July 2022—September 2022}
-      {RDXLabs}{Remote}
-      {Web application for financial operations}
+      {Fullstack разработчик}{Сентябрь 2023—Ноябрь 2023}
+      {\href{https://t.me/abouthub}{\underline{Hub}}}{Удаленно}
+      {LLM-powered ассистент по документам, инструкциям, договорам.\\Для юристов, сотрудников и топ–менеджеров в enterprise.\\Получение ответов на вопросы по документу\\с помощью запросов на естественном языке}
+      \resumeItemListStart
+        \resumeItem{RAG–система из комбинации двух различных ретриверов. \\Увеличил субъективную точность ответов в 2 раза}
+        \resumeItem{Прогресс–бар обработки документа с использованием WebSocket. Улучшил пользовательской опыт}
+        \resumeItem{Очередь задач для фоновой обработки документа. Стало возможным моментально отдавать HTTP ответ клиенту}
+        \resumeItem{Провёл >15 презентаций генеральному заказчику}
+        \resumeItem{API приложения на FastAPI}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Team Lead команды разработки}{Ноябрь 2023—Апрель 2024}
+      {\href{https://t.me/abouthub}{\underline{Hub}}}{Удаленно}
+      {Семантический маппер строительной номенклатуры\\методом поиска ближайших эмбедингов для застройщиков}
+      \resumeItemListStart
+        \resumeItem{Классификатор строильной номенклатуры на основе регрессионной модели из scikit-learn, что увеличило точность маппера}
+        \resumeItem{Интеграция векторстора ChromaDB для хранения эмбеддингов. Сократил потребление оперативной памяти}
+        \resumeItem{E2E тестирование. Устранил несогласованность версий OpenSSL, которая мешала интеграции сервиса с SQL Server заказчика}
+        \resumeItem{Провёл >15 презентаций генеральному заказчику}
+      \resumeItemListEnd
+
+  \resumeSubheading
+      {Fullstack Разработчик}{Февраль 2023—Май 2023}
+      {\href{https://vpa.group}{\underline{VPA Group}}}{Удаленно}
+      {Платформа футбольной аналитики для РПЛ}
+
+      \resumeItemListStart
+        \resumeItem{Разработал >50 правил для подсчёта футбольных метрик на основе временных меток матча}
+        \resumeItem{Разработал универсальных класс–репозиторий для создания CRUD операций через наследование от него}
+        \resumeItem{Спроектировал >10 REST API эндпоинтов на FastAPI}
+        \resumeItem{Разработал >10 компонентов на React}
+      \resumeItemListEnd
+      
+
+  \resumeSubheading
+      {Junior Fullstack Разработчик}{Февраль 2023—Май 2023}
+      {\href{https://vpa.group}{\underline{VPA Group}}}{Удаленно}
+      {Платформа футбольной аналитики для РПЛ}
       
       \resumeItemListStart
+        \resumeItem{Разработал >50 правил для подсчёта футбольных метрик на основе временных меток матча}
+        \resumeItem{Разработал универсальных класс–репозиторий для создания CRUD операций через наследование от него}
+        \resumeItem{Спроектировал >10 REST API эндпоинтов на FastAPI}
+        \resumeItem{Разработал >10 компонентов на React}
+      \resumeItemListEnd
+
+  \resumeSubheading
+      {Java разработчик}{Декабрь 2022—Январь 2023}
+      {CorporationX}{Удаленно}
+      {Платформа для поиска контрибьюторов на open-source проект}
+      
+      \resumeItemListStart
+        \resumeItem{Спроектировал >15 эндпоинтов с использованием Spring и Hibernate}
+        \resumeItem{Спроектировал >10 таблиц базы данных PostgreSQL}
+        \resumeItem{Спроектировал механизм для глобальной обработки исключений}
+        \resumeItem{Настроил Spring Security для регистрации и авторизации в приложении}
+        \resumeItem{Интегрировал Amazon S3 для хранения пользовательских аватаров в blob хранилище}
+        \resumeItem{Интегрировал Amazon SES для отправки e-mail уведомлений пользователям}
+        \resumeItem{Настроил логирование для всего проекта}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Фронтенд разработчик}{Июль 2022—Сентябрь 2022}
+      {RDXLabs}{Удаленно}
+      {Онлайн–платформа для трейдинга}
+      
+      \resumeItemListStart
+        \resumeItem{Разработал компонент для отрисовки графика торгов в личном кабинете}
         \resumeItem{Integrated Formik and Tailwind CSS libraries to increase the productivity of the team}
-        \resumeItem{Developed landing page based on the design from Figma}
+        \resumeItem{Разработал pixel-perfect лендинг по дизайну из Figma}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -194,28 +250,32 @@
 
 
 %-----------PROJECTS-----------
-\section{Projects}
+\section{Проекты}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Daycounters} $|$ \emph{Spring, Hibernate, TelegramBots library}}{January 2023}
-          {Telegram bot for habit tracking developed in Spring}
-          {\href{https://github.com/bleschunov/daycounters}{\underline{Code on GitHub}}}
-          
+          {\textbf{Telegram Helper} $|$ \emph{OOP, asyncio, FastAPI, MongoDB, Telethon}}{Апрель 2024—Настоящее время}
+          {Open-source менеджер рассылок в Телеграме}
+          {\href{https://github.com/bleschunov/telegram_helper}{\underline{Код на GitHub}}}
           \resumeItemListStart
-            \resumeItem{Developed a REST API using Spring and PostgreSQL}
-            \resumeItem{Developed Telegram bot as the frontend}
-            \resumeItem{Deployed to Amazon EC2}
+            \resumeItem{Проектирование асинхронной ООП архитектуры проекта}
+            \resumeItem{Составление бизнес–логики сервиса}
+            \resumeItem{Декопмпозиция проекта на задачи}
+            \resumeItem{Написание кода}
+            \resumeItem{Написание юнит–тестов}
+            \resumeItem{Привлечение разработчик к работе над проектом}
+            \resumeItem{Проектирование бизнес–модели проекта, монетизация}
           \resumeItemListEnd
+          
       \resumeProjectHeading
-          {\textbf{QrGo} $|$ \emph{Node.js, Express, React, MongoDB, Figma}}{March 2022—June 2022}
-          {Browser game for exploration the real world}
-          {\href{https://github.com/bleschunov/qr-go}{\underline{Code on GitHub}}}
+          {\textbf{QrGo} $|$ \emph{Node.js, Express, React, MongoDB, Figma}}{Март 2022—Июнь 2022}
+          {Сервис с элементами геймификации для знакомства первокурскников с кампусом университета}
+          {\href{https://github.com/bleschunov/qr-go}{\underline{Код на GitHub}}}
         
           \resumeItemListStart
-            \resumeItem{Developed REST API using NodeJS and MongoDB}
-            \resumeItem{Designed web interface using Figma}
-            \resumeItem{Developed the frontend using React}
-            \resumeItem{Deployed to Vercel}
+            \resumeItem{Разработал бекенд приложения с использованием Node.js и MongoDB}
+            \resumeItem{Разработал дизайн веб–приложения в Figma}
+            \resumeItem{Разработал веб–интерфейс на React}
+            \resumeItem{Задеплоил демо–версию на Vercel}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -224,20 +284,12 @@
 %
 
 %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
+\section{Технические навыки}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: Java, Python, JavaScript, TypeScript, SQL (Postgres), HTML/CSS} \\
-     \textbf{Frameworks \& Libraries}{: Spring, Fastapi, Express, React, Firebase, AWS }
-    }}
- \end{itemize}
-
- %-----------LANGUAGES-----------
-\section{Languages}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{English}{: Professional working proficiency} \\
-     \textbf{Russian}{: Native proficiency} \\
+     \textbf{Языки программирования}{: Python, JavaScript, TypeScript, SQL, HTML/CSS} \\
+     \textbf{Технологии}{: Docker, PostgreSQL, SQL Server, MongoDB, Redis, ChromaDB, Git} \\
+     \textbf{Фреймворки \& библиотеки}{: FastAPI, asyncio, Django, Spring, Express, React, Firebase, AWS, Celery, Redis Queue}
     }}
  \end{itemize}
 
